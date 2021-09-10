@@ -24,10 +24,7 @@ export function TaskList() {
         title: newTaskTitle
       };
       setTasks([...tasks, newTask]);
-      let o = document.querySelector(`input[value="${newTaskTitle}"]`);
-      if (o) {
-        setNewTaskTitle('');
-      }
+      setNewTaskTitle('');
     } else {
       let msg = 'Could not create a new task: Task Title cannot be empty!';
       console.log(msg);
